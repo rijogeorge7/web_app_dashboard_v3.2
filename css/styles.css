@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 320px;
+}
+
+header {
+    display: flex;
+    grid-column: 1 / 2;
+    height: 60px;
+    background-color: #7477BF;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+header img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+#app-name {
+    font-size: 1.3rem;
+}
+
+
+nav{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #4D4C72;
+}
+
+nav img {
+    height: 30px;
+    width: 30px;
+}
