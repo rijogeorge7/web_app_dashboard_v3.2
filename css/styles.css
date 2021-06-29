@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 .grid-container{
@@ -53,4 +55,79 @@ nav img {
     height: 100%;
     border-left: 1px solid rgb(191, 170, 170);
     border-bottom: 1px solid rgb(191, 170, 170);
+}
+.alert-sec {
+    margin: 15px;
+    background-color: #7477BF;
+    border-radius: 10px;
+    color: #F2F2F2;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.traffic {
+    height: 200px;
+}
+
+.dayily-traffic {
+    height: 200px;
+}
+
+.mobile-users {
+    height: 200px;
+}
+
+.social-stats {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+
+.social-sec {
+    display: flex;
+    height: 90px;
+    background-color: #F5F5F5;
+    align-items: center;
+    color: #7477BF;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border:1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.social-sec img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.counter {
+    color: #777777;
+    font-size: 2rem;
+}
+
+.new-members {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    /* font-size: .7rem; */
+}
+
+.member img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.recent-activity {
+    padding: 15px;
 }
