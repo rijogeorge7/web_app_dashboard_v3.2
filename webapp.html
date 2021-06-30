@@ -117,27 +117,31 @@
             </div>
         </div>
         <div class="message">
-            message users <br><br>
+            <h2>message users</h2> <br><br>
             <form action="">
-                <input type="text" id="subject" name="subject"> <br><br>
+                <input type="text" id="subject" name="Search" placeholder="search for User"> <br><br>
                 <textarea name="message" id="message" cols="30" rows="10"></textarea> <br><br>
                 <input type="submit" value="SEND">
             </form>
         </div>
         <div class="settings">
-            Settings <br><br>
+            <h2>Settings</h2> <br><br>
             <form action="">
-                Send email notification
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
+                <div class="switch-sec">
+                    Send email notification
+                    <label class="switch" id="email">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
                 <br>
-                Set profile to public
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
+                <div class="switch-sec">
+                    Set profile to public
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
                 <br>
                 <select name="timezone" id="timezone">
                     <option value="Select TimeZone">Select TimeZone</option>
