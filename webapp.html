@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
 </head>
 <body>
     <div class="grid-container">
@@ -30,7 +32,16 @@
             Alert: You have unread messages
         </div>
         <div class="traffic">
-            <h2> traffic </h2>
+            <h3> Traffic </h3>
+            <ul class="traffic-nav">
+                <li class="traffic-nav-link">Hourly</li>
+                <li class="traffic-nav-link">Dayily</li>
+                <li class="traffic-nav-link">Weekly</li>
+                <li class="traffic-nav-link">Monthly</li>
+            </ul>
+            <div class="chart-container">
+                <canvas id="myChart" ></canvas>
+              </div>
         </div>
         <div class="dayily-traffic">
             <h2> dayily traffic </h2>
@@ -152,5 +163,6 @@
             </form>
         </div>
     </div>
+    <script src="/js/script.js"></script>
 </body>
 </html>
