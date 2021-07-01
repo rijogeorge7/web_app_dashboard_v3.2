@@ -86,11 +86,18 @@ ul li{
 
 .dayily-traffic {
     margin-top: 70px;
-    height: 200px;
+    width: 100vw;
+    height: 50vw;
 }
 
 .mobile-users {
-    height: 200px;
+    margin-top: 70px;
+    width: 100vw;
+    height: 100vw;
+}
+
+.pie-chart {
+    padding: 10%;
 }
 
 .social-stats {

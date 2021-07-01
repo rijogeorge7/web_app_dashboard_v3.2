@@ -31,3 +31,82 @@ const labels = [
     document.getElementById('myChart'),
     config
   );
+
+  const dayilyTraficLabels = [
+    'S',
+    'M',
+    'T',
+    'W',
+    'T',
+    'F',
+    'S',
+  ];
+
+  const dayilyTrafficData = {
+    labels: dayilyTraficLabels,
+    datasets: [{
+      label: '',
+      data: [70, 110, 170, 120, 220, 200, 100],
+      backgroundColor: [
+        'rgba(102, 102, 204)',
+      ],
+      borderColor: [
+        'rgb(0, 0, 255)',
+      ],
+      borderWidth: 1
+    }]
+  };
+
+  const dayilyTrafficConfig = {
+    type: 'bar',
+    data: dayilyTrafficData,
+    options: {
+        scales: {
+        y: {
+            beginAtZero: true
+        }
+        }
+    },
+    };
+
+  var dayilyChart = new Chart(
+    document.getElementById('dayilyChart'),
+    dayilyTrafficConfig
+  );
+
+  const mobileUsersData = {
+    labels: [
+      'Desktop',
+      'Tablet',
+      'Phones'
+    ],
+    datasets: [{
+      label: 'My First Dataset',
+      data: [300, 50, 100],
+      backgroundColor: [
+        'rgb(102, 102, 204)',
+        'rgb(153, 204, 153)',
+        'rgb(102, 204, 204)'
+      ],
+      hoverOffset: 4
+    }]
+  };
+
+  const mobileUsersConfig = {
+    type: 'doughnut',
+    data: mobileUsersData,
+    options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'right',
+          },
+          
+        }
+      },
+    };
+
+  var mobileUsersChart = new Chart(
+    document.getElementById('mobileUsersChart'),
+    mobileUsersConfig
+  );
