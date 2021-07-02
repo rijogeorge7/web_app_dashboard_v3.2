@@ -56,7 +56,11 @@ nav img {
     border-left: 1px solid rgb(191, 170, 170);
     border-bottom: 1px solid rgb(191, 170, 170);
 }
-.alert-sec {
+
+
+
+#alert {
+    display: inline-block;
     margin: 15px;
     background-color: #7477BF;
     border-radius: 10px;
@@ -64,6 +68,15 @@ nav img {
     padding: 15px;
     font-size: 1.1rem;
 }
+
+.alert-banner p {
+    display: inline-block;
+}
+
+.alert-banner-close {
+    margin-left: 25px;
+}
+
 ul {
     margin-top: 10px;
 }
@@ -81,19 +94,32 @@ ul li{
 .traffic {
     width: 100vw;
     height: 50vw;
+    padding: 15px;
 }
 
+.traffic h3 {
+    padding: 15px;
+}
 
 .dayily-traffic {
     margin-top: 70px;
     width: 100vw;
     height: 50vw;
+    padding: 15px;
 }
 
 .mobile-users {
     margin-top: 70px;
     width: 100vw;
     height: 100vw;
+}
+.mobile-users h3 {
+    padding: 15px;
+}
+
+
+.dayily-traffic h3 {
+    padding: 15px;
 }
 
 .pie-chart {

@@ -1,112 +1,134 @@
-const labels = [
-    '16-22',
-    '23-29',
-    '30-5',
-    '6-12',
-    '13-19',
-    '20-26',
-    '27-3',
-    '4-10',
-    '11-17',
-    '18-24',
-    '25-31',
-  ];
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: '',
-      backgroundColor: 'rgb(204, 204, 255, 0.5)',
-      borderColor: 'rgb(204, 204, 255, 0.5)',
-      data: [750, 1200, 1000, 2000, 1500, 1750, 1250,1850,2200,1500,2500],
-      fill: true,
-      tension: 0.4
-    }]
-  };
-  const config = {
-    type: 'line',
-    data,
-    options: {}
-  };
-  var myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
+    // traffic line chart
+    const labels = [
+        '16-22',
+        '23-29',
+        '30-5',
+        '6-12',
+        '13-19',
+        '20-26',
+        '27-3',
+        '4-10',
+        '11-17',
+        '18-24',
+        '25-31',
+    ];
+    const data = {
+        labels: labels,
+        datasets: [{
+        label: '',
+        backgroundColor: 'rgb(204, 204, 255, 0.5)',
+        borderColor: 'rgb(204, 204, 255, 0.5)',
+        data: [750, 1200, 1000, 2000, 1500, 1750, 1250,1850,2200,1500,2500],
+        fill: true,
+        tension: 0.4
+        }]
+    };
+    const config = {
+        type: 'line',
+        data,
+        options: {}
+    };
+    var myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
 
-  const dayilyTraficLabels = [
-    'S',
-    'M',
-    'T',
-    'W',
-    'T',
-    'F',
-    'S',
-  ];
+    // dayily traffic bar chart
+    const dayilyTraficLabels = [
+        'S',
+        'M',
+        'T',
+        'W',
+        'T',
+        'F',
+        'S',
+    ];
 
-  const dayilyTrafficData = {
-    labels: dayilyTraficLabels,
-    datasets: [{
-      label: '',
-      data: [70, 110, 170, 120, 220, 200, 100],
-      backgroundColor: [
-        'rgba(102, 102, 204)',
-      ],
-      borderColor: [
-        'rgb(0, 0, 255)',
-      ],
-      borderWidth: 1
-    }]
-  };
-
-  const dayilyTrafficConfig = {
-    type: 'bar',
-    data: dayilyTrafficData,
-    options: {
-        scales: {
-        y: {
-            beginAtZero: true
-        }
-        }
-    },
+    const dayilyTrafficData = {
+        labels: dayilyTraficLabels,
+        datasets: [{
+        label: '',
+        data: [70, 110, 170, 120, 220, 200, 100],
+        backgroundColor: [
+            'rgba(102, 102, 204)',
+        ],
+        borderColor: [
+            'rgb(0, 0, 255)',
+        ],
+        borderWidth: 1
+        }]
     };
 
-  var dayilyChart = new Chart(
-    document.getElementById('dayilyChart'),
-    dayilyTrafficConfig
-  );
+    const dayilyTrafficConfig = {
+        type: 'bar',
+        data: dayilyTrafficData,
+        options: {
+            scales: {
+            y: {
+                beginAtZero: true
+            }
+            }
+        },
+        };
 
-  const mobileUsersData = {
-    labels: [
-      'Desktop',
-      'Tablet',
-      'Phones'
-    ],
-    datasets: [{
-      label: 'My First Dataset',
-      data: [300, 50, 100],
-      backgroundColor: [
-        'rgb(102, 102, 204)',
-        'rgb(153, 204, 153)',
-        'rgb(102, 204, 204)'
-      ],
-      hoverOffset: 4
-    }]
-  };
+    var dayilyChart = new Chart(
+        document.getElementById('dayilyChart'),
+        dayilyTrafficConfig
+    );
 
-  const mobileUsersConfig = {
-    type: 'doughnut',
-    data: mobileUsersData,
-    options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            position: 'right',
-          },
-          
-        }
-      },
+    // mobile user doughnut chart
+    const mobileUsersData = {
+        labels: [
+        'Desktop',
+        'Tablet',
+        'Phones'
+        ],
+        datasets: [{
+        label: 'My First Dataset',
+        data: [300, 50, 100],
+        backgroundColor: [
+            'rgb(102, 102, 204)',
+            'rgb(153, 204, 153)',
+            'rgb(102, 204, 204)'
+        ],
+        hoverOffset: 4
+        }]
     };
+
+    const mobileUsersConfig = {
+        type: 'doughnut',
+        data: mobileUsersData,
+        options: {
+            responsive: true,
+            plugins: {
+            legend: {
+                position: 'right',
+            },
+            
+            }
+        },
+        };
 
   var mobileUsersChart = new Chart(
     document.getElementById('mobileUsersChart'),
     mobileUsersConfig
   );
+
+    // Alert panel
+    const alertBanner = document.getElementById("alert");
+    // create the html for the banner
+    alertBanner.innerHTML =
+        `
+        <div class="alert-banner">
+        <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks
+        to complete</p>
+        <p class="alert-banner-close">x</p>
+        </div>
+        `
+    alertBanner.addEventListener('click', e => {
+        const element = e.target;
+        if (element.classList.contains("alert-banner-close")) {
+        alertBanner.style.display = "none"
+        };
+
+    });

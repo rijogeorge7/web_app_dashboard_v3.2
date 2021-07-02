@@ -28,9 +28,10 @@
             Dashboard
             <div class="grey-rect"></div>
         </div>
-        <div class="alert-sec">
-            Alert: You have unread messages
-        </div>
+        
+            <div id="alert"></div>
+            
+        
         <div class="traffic">
             <h3> Traffic </h3>
             <ul class="traffic-nav">
@@ -131,15 +132,15 @@
                 1 day ago
             </div>
         </div>
-        <div class="message">
+        <section class="message">
             <h2>message users</h2> <br><br>
             <form action="">
                 <input type="text" id="subject" name="Search" placeholder="search for User"> <br><br>
                 <textarea name="message" id="message" cols="30" rows="10"></textarea> <br><br>
                 <input type="submit" value="SEND">
             </form>
-        </div>
-        <div class="settings">
+        </section>
+        <section class="settings">
             <h2>Settings</h2> <br><br>
             <form action="">
                 <div class="switch-sec">
@@ -165,7 +166,7 @@
                 <input type="submit" value="SAVE">
                 <input type="reset" value="CANCEL">
             </form>
-        </div>
+        </section>
     </div>
     <script src="/js/script.js"></script>
 </body>
