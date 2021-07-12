@@ -284,4 +284,51 @@ nav img {
 
   @media screen and (min-width: 760px) {
       
+    header {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .nav-head {
+        display: none;
+    }
+
+    #alert {
+        display: none;
+    }
+
+    .traffic {
+        display: none;
+    }
+
+    .dayily-traffic {
+        display: none;
+    }
+
+    .mobile-users {
+        display: none;
+    }
+
+    .social-stats {
+        display: none;
+    }
+
+    .new-members {
+        display: none;
+    }
+
+    .recent-activity {
+        display: none;
+    }
+
+    .message {
+        display: none;
+    }
+
+    .settings {
+        display: none;
+    }
   }
