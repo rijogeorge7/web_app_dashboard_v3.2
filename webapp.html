@@ -33,48 +33,54 @@
             
         
         <div class="traffic">
-            <h3> Traffic </h3>
-            <ul class="traffic-nav">
-                <li class="traffic-nav-link">Hourly</li>
-                <li class="traffic-nav-link">Dayily</li>
-                <li class="traffic-nav-link">Weekly</li>
-                <li class="traffic-nav-link">Monthly</li>
-            </ul>
+            <div class="inline">
+                <h3> Traffic </h3>
+                <ul class="traffic-nav">
+                    <li class="traffic-nav-link">Hourly</li>
+                    <li class="traffic-nav-link">Dayily</li>
+                    <li class="traffic-nav-link">Weekly</li>
+                    <li class="traffic-nav-link">Monthly</li>
+                </ul>
+            </div>
             <div class="chart-container">
                 <canvas id="myChart" ></canvas>
               </div>
         </div>
-        <div class="dayily-traffic">
-            <h3> dayily traffic </h3>
-            <canvas id="dayilyChart" ></canvas>
-        </div>
-        <div class="mobile-users">
-          <h3> mobile users </h3>
-          <div class="pie-chart">
-            <canvas id="mobileUsersChart" ></canvas>
-          </div>
+        <div class="other-traffic">
+            <div class="dayily-traffic">
+                <h3> dayily traffic </h3>
+                <canvas id="dayilyChart" ></canvas>
+            </div>
+            <div class="mobile-users">
+                <h3> mobile users </h3>
+                    <div class="pie-chart">
+                        <canvas id="mobileUsersChart" ></canvas>
+                    </div>
+            </div>
         </div>
         <div class="social-stats">
             <h2>social stats</h2>
-            <div class="social-sec facebook-sec">
-                <img src="svgs/facebook.svg" alt="" >
-                <div class="ststs-count">
-                    Facebook<br>
-                    <span class="counter">10,320</span>
+            <div class="social-sections">
+                <div class="social-sec facebook-sec">
+                    <img src="svgs/facebook.svg" alt="" >
+                    <div class="ststs-count">
+                        Facebook<br>
+                        <span class="counter">10,320</span>
+                    </div>
                 </div>
-            </div>
-            <div class="social-sec instagram-sec">
-                <img src="svgs/instagram.svg" alt="" >
-                <div class="ststs-count">
-                    instagram <br>
-                    <span class="counter">16,445</span>
+                <div class="social-sec instagram-sec">
+                    <img src="svgs/instagram.svg" alt="" >
+                    <div class="ststs-count">
+                        instagram <br>
+                        <span class="counter">16,445</span>
+                    </div>
                 </div>
-            </div>
-            <div class="social-sec twitter-sec">
-                <img src="svgs/twitter.svg" alt="" >
-                <div class="ststs-count">
-                    twitter <br>
-                    <span class="counter">22,189</span>
+                <div class="social-sec twitter-sec">
+                    <img src="svgs/twitter.svg" alt="" >
+                    <div class="ststs-count">
+                        twitter <br>
+                        <span class="counter">22,189</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,7 +116,7 @@
             <h2>RECENT ACTIVITY</h2>
             <div class="member">
                 <img src="images/member-1.jpg" alt="">
-                <span class="line-item"> Victoria Chambers commented on WebApp's<br> </span>
+                <span class="line-item"></span> Victoria Chambers commented on WebApp's<br> </span>
                 SEO Tips<br>
                 4 hours ago
             </div>
